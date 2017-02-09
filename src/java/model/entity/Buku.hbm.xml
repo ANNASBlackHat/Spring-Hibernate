@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 10, 2017 1:30:38 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping auto-import="true">
+    <class name="model.entity.Buku" table="buku" catalog="perpustakaan" optimistic-lock="version">
+        <id name="id" type="long">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="judul" type="string">
+            <column name="judul" length="250" />
+        </property>
+        <property name="penerbit" type="string">
+            <column name="penerbit" length="250" />
+        </property>
+    </class>
+</hibernate-mapping>
